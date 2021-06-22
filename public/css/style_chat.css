@@ -86,9 +86,9 @@ a {
 }
 
 .chat-main {
-	display: flex;
-	/* grid-template-columns: 1fr 3fr; */
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	height: 400px;
 }
 
 .chat-sidebar {
@@ -178,13 +178,13 @@ a {
 @media (max-width: 409px) {
 	.btn {
 		font-size: 13px;
-		margin-top: 15px;
+		margin-top: 10px;
 	}
 	.chat-container{
 		font-size: 12px;
 	}
 	.chat-header h1{
 		font-size: 25px;
-		margin-top: 13px;
+		margin-top: 15px;
 	}
 }
