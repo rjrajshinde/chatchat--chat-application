@@ -12,7 +12,6 @@ const {
   getRoomUser,
 } = require("./utils/users");
 
-
 var port = process.env.PORT || 3000;
 
 const server = http.createServer(app);
@@ -22,7 +21,7 @@ const io = socketio(server);
 const botName = "ChatChat Bot";
 
 //run when the client connects
-//from here we are emiting or brodcasting the message and the main.js will catch it to the client
+//from here we are emiting or broadcasting the message and the main.js will catch it to the client
 io.on("connection", (socket) => {
   socket.on("joinRoom", ({ username, room }) => {
     const user = userJoin(socket.id, username, room);
@@ -34,7 +33,7 @@ io.on("connection", (socket) => {
 
     //broadcast the message when the user connects to chat
     //this message emits to everybody except the user who emits it or user that's connecting
-    //we don't need to notify the user that he is conneting we notify others that this user is conneting to chat
+    //we don't need to notify the user that he is connecting we notify others that this user is connecting to chat
     socket.broadcast
       .to(user.room)
       .emit(
@@ -43,7 +42,7 @@ io.on("connection", (socket) => {
       );
 
     //send the users and room info on the sidebar of chat.html
-    io.to(user.room).emit('roomUsers', {
+    io.to(user.room).emit("roomUsers", {
       room: user.room,
       users: getRoomUser(user.room),
     });
@@ -68,7 +67,7 @@ io.on("connection", (socket) => {
       );
 
       //send the users and room info on the sidebar of chat.html
-      io.to(user.room).emit('roomUsers', {
+      io.to(user.room).emit("roomUsers", {
         room: user.room,
         users: getRoomUser(user.room),
       });

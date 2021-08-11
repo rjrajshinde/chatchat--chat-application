@@ -1,72 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 :root {
-	--dark-color-a: #667aff;
-	--dark-color-b: #7386ff;
-	--light-color: #e6e9ff;
-	--success-color: #50e753;
-	--error-color: #d9534f;
-    --button-hover-color: #E75350;
+  --dark-color: #ce2029;
+  --light-color: #e6e9ff;
+  --success-color: #14dcb4;
+  --error-color: #d9534f;
+  --button-hover-color: #a0dc14;
 }
 
 body {
-    /* font-family: 'Varela Round', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
-    color: var(--light-color);
-    font-weight: 600;
-    padding: 0 20px;
-    font-size: 20px;
+  /* font-family: 'Varela Round', sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  color: var(--light-color);
+  font-weight: 600;
+  padding: 0 20px;
+  font-size: 20px;
 }
 
 .main {
-    max-width: 480px;
-    margin: 100px auto;
-    height: 400px;
-    padding: 40px;
-    background-color: var(--dark-color-a);
-    border-radius: 10px;
+  max-width: 480px;
+  margin: 100px auto;
+  height: 400px;
+  padding: 40px;
+  background-color: var(--dark-color);
+  border-radius: 10px;
 }
 
 .main hr {
-    color: var(--light-color);
-    opacity: 1;
+  color: var(--light-color);
+  opacity: 1;
 }
 
 .title-container .title {
+  letter-spacing: 4px;
+  font-size: 45px;
+  font-family: "Great Vibes", cursive;
+}
+
+.title-container .title img {
+  margin-left: 10px;
+}
+
+.form-container input[type="text"] {
+  border-radius: 0 50px 50px 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  height: 40px;
+  margin-left: 10px;
+  width: 96%;
+}
+
+.form-container label {
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+.form-container input[type="submit"] {
+  font-size: larger;
+  border: none;
+  background-color: var(--success-color);
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.form-container input[type="submit"]:hover {
+  border: 1px solid var(--light-color);
+  background-color: var(--button-hover-color);
+  color: #000;
+}
+@media (max-width: 355px) {
+  .title-container .title {
     letter-spacing: 4px;
-    background-color: var(--dark-color-b);
-}
-
-.form-container input[type='text'] {
-    border-radius: 0 50px 50px 0;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    height: 40px;
-    margin-left: 10px;
-    width: 96%;
-}
-
-.form-container label{
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding-bottom: 5px;
-}
-
-.form-container input[type='submit'] {
-    font-size: larger;
-    border: none;
-    background-color: var(--success-color);
-    padding: 10px 0;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
- 
-.form-container input[type='submit']:hover{
-    border: 1px solid var(--light-color);
-    background-color: var(--button-hover-color);
-    color: var(--light-color);
+    font-size: 28px;
+  }
+  body {
+    font-size: 17px;
+  }
+  .main {
+    padding: 40px 30px;
+  }
 }
