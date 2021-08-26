@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
 :root {
-  --dark-color: #ce2029;
+  --dark-color: #2b71db;
   --light-color: #e6e9ff;
-  --success-color: #14dcb4;
+  --success-color: #43dc14;
   --error-color: #d9534f;
-  --button-hover-color: #a0dc14;
+  --button-hover-color: #fffb00;
 }
 
 body {
@@ -36,7 +35,7 @@ body {
 .title-container .title {
   letter-spacing: 4px;
   font-size: 45px;
-  font-family: "Great Vibes", cursive;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .title-container .title img {

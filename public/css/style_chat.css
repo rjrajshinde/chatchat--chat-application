@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
 :root {
   /* linear-gradient(
@@ -8,8 +8,8 @@
     rgba(9, 9, 121, 1) 61%,
     rgba(0, 212, 255, 1) 100%
   ); */
-  --dark-color-a: #d2122e;
-  --dark-color-b: #fd5c63;
+  --dark-color-a: #2b71db;
+  --dark-color-b: #4c95f3;
   --light-color: #e6e9ff;
   --success-color: #5cb85c;
   --error-color: #d9534f;
@@ -50,6 +50,12 @@ a {
   animation: gradient 100ms;
   background: #50e753;
   color: black;
+  box-shadow: none;
+}
+.red:active {
+  animation: gradient 100ms;
+  background: #c72b2b;
+  color: rgb(255, 255, 255);
   box-shadow: none;
 }
 @keyframes gradient {
@@ -124,7 +130,7 @@ a {
 .chat-header h1 {
   letter-spacing: 4px;
   font-size: 45px;
-  font-family: "Great Vibes", cursive;
+  font-family: "Ubuntu", sans-serif;
   margin-top: 3px;
   margin-bottom: -5px;
 }
@@ -175,7 +181,7 @@ a {
 .chat-messages .message .meta {
   font-size: 15px;
   font-weight: bold;
-  color: var(--dark-color-b);
+  color: #d9534f;
   opacity: 0.7;
   margin-bottom: 7px;
 }
