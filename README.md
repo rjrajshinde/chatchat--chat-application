@@ -7,5 +7,4 @@
 * nodeJs as a backend
 * html,css for design purpose
 
->By clicking this link you will see how it's works
-https://chatchat-myapp.herokuapp.com/
+>this app is live here https://chatchat-myapp.herokuapp.com/
